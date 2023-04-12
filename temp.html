@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="cal1()">Celsius to Fahrenheit </button>
+    <br>
+    <br>
+    <button onclick="cal2()"> Fahrenheit to  Celsius </button>
+    <script>
+        function cal1(){
+            let Cel=+ prompt("Enter the temperature in Celsius");
+            let Fah=(Cel*9/5)+32;
+            document.getElementById("demo").innerHTML=Fah;
+        }
+        function cal2(){
+            let Fah=+ prompt("Enter the temperature in Fahrenheit");
+           let Cel=(Fah-32)*5/9;
+            document.getElementById("demo").innerHTML=Cel;
+        }
+    </script>
+</body>
+</html>
